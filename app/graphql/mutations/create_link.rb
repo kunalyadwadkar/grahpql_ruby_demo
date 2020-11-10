@@ -11,6 +11,5 @@ module Mutations
       Link.create!(description: description,
                    url: url)
     end
-
   end
 end

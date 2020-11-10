@@ -1,17 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b66b369-8f2b-4cac-8fba-2fd6ced2e4ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+    <list default="true" id="3b66b369-8f2b-4cac-8fba-2fd6ced2e4ab" name="Default Changelist" comment="Workspa">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/graphql/types/mutation_type.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/types/mutation_type.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Ruby Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1jtJcvfqp95X5T1vCh4nYjrw8L9" />
   <component name="ProjectViewState">
@@ -30,6 +62,8 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
   </component>
   <component name="RunManager" selected="Rails.Development: graphql-tutorial">
     <configuration name="Development: graphql-tutorial" type="RailsRunConfigurationType" factoryName="Rails">
@@ -47,11 +81,12 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="default" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method v="2" />
@@ -129,6 +164,12 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Rails.Development: graphql-tutorial" />
+      <item itemvalue="Rails.Production: graphql-tutorial" />
+      <item itemvalue="Rake.spec: graphql-tutorial" />
+      <item itemvalue="Rake.test: graphql-tutorial" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
@@ -139,22 +180,114 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604617537831</updated>
-      <workItem from="1604617542664" duration="1996000" />
+      <workItem from="1604617542664" duration="6278000" />
     </task>
+    <task id="LOCAL-00001" summary="Add the GraphIQL css to the asset pre-compile pipeline.">
+      <created>1605036678675</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605036678675</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add a query.">
+      <created>1605036698376</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605036698376</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Workspa">
+      <created>1605036786600</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605036786600</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add the GraphIQL css to the asset pre-compile pipeline." />
+    <MESSAGE value="Add a query." />
+    <MESSAGE value="Workspa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Workspa" />
   </component>
   <component name="WindowStateProjectService">
     <state x="689" y="339" key="#Notifications" timestamp="1604617556792">
       <screen x="0" y="23" width="1920" height="971" />
     </state>
     <state x="689" y="339" key="#Notifications/0.23.1920.971@0.23.1920.971" timestamp="1604617556792" />
-    <state x="385" y="138" width="670" height="677" key="search.everywhere.popup" timestamp="1604631804850">
-      <screen x="0" y="23" width="1440" height="792" />
+    <state x="184" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604697627102">
+      <screen x="0" y="23" width="1440" height="795" />
+    </state>
+    <state x="184" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.795@0.23.1440.795" timestamp="1604697627102" />
+    <state x="537" y="84" key="CommitChangelistDialog2" timestamp="1605036786491">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state x="537" y="84" key="CommitChangelistDialog2/0.23.1920.971@0.23.1920.971" timestamp="1605036786491" />
+    <state x="100" y="123" width="1720" height="771" key="DiffContextDialog" timestamp="1604697401410">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state x="100" y="123" width="1720" height="771" key="DiffContextDialog/0.23.1920.971@0.23.1920.971" timestamp="1604697401410" />
+    <state width="1878" height="202" key="GridCell.Tab.0.bottom" timestamp="1605036579218">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state width="1878" height="202" key="GridCell.Tab.0.bottom/0.23.1920.971@0.23.1920.971" timestamp="1605036579218" />
+    <state width="1878" height="202" key="GridCell.Tab.0.center" timestamp="1605036579217">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state width="1878" height="202" key="GridCell.Tab.0.center/0.23.1920.971@0.23.1920.971" timestamp="1605036579217" />
+    <state width="1878" height="202" key="GridCell.Tab.0.left" timestamp="1605036579216">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state width="1878" height="202" key="GridCell.Tab.0.left/0.23.1920.971@0.23.1920.971" timestamp="1605036579216" />
+    <state width="1878" height="202" key="GridCell.Tab.0.right" timestamp="1605036579217">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state width="1878" height="202" key="GridCell.Tab.0.right/0.23.1920.971@0.23.1920.971" timestamp="1605036579217" />
+    <state width="1878" height="202" key="GridCell.Tab.1.bottom" timestamp="1605036579219">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state width="1878" height="202" key="GridCell.Tab.1.bottom/0.23.1920.971@0.23.1920.971" timestamp="1605036579219" />
+    <state width="1878" height="202" key="GridCell.Tab.1.center" timestamp="1605036579218">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state width="1878" height="202" key="GridCell.Tab.1.center/0.23.1920.971@0.23.1920.971" timestamp="1605036579218" />
+    <state width="1878" height="202" key="GridCell.Tab.1.left" timestamp="1605036579218">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state width="1878" height="202" key="GridCell.Tab.1.left/0.23.1920.971@0.23.1920.971" timestamp="1605036579218" />
+    <state width="1878" height="202" key="GridCell.Tab.1.right" timestamp="1605036579218">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state width="1878" height="202" key="GridCell.Tab.1.right/0.23.1920.971@0.23.1920.971" timestamp="1605036579218" />
+    <state x="221" y="57" key="SettingsEditor" timestamp="1604700954909">
+      <screen x="0" y="23" width="1440" height="795" />
+    </state>
+    <state x="221" y="57" key="SettingsEditor/0.23.1440.795@0.23.1440.795" timestamp="1604700954909" />
+    <state x="513" y="163" width="894" height="831" key="search.everywhere.popup" timestamp="1605036749226">
+      <screen x="0" y="23" width="1920" height="971" />
     </state>
     <state x="385" y="138" width="670" height="676" key="search.everywhere.popup/0.23.1440.791@0.23.1440.791" timestamp="1604628389565" />
-    <state x="385" y="138" width="670" height="677" key="search.everywhere.popup/0.23.1440.792@0.23.1440.792" timestamp="1604631804850" />
+    <state x="385" y="138" width="670" height="677" key="search.everywhere.popup/0.23.1440.792@0.23.1440.792" timestamp="1604697577889" />
+    <state x="385" y="138" width="670" height="680" key="search.everywhere.popup/0.23.1440.795@0.23.1440.795" timestamp="1604701138602" />
+    <state x="513" y="163" width="894" height="831" key="search.everywhere.popup/0.23.1920.971@0.23.1920.971" timestamp="1605036749226" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/graphql_tutorial@Development__graphql_tutorial.rcov" NAME="Development: graphql-tutorial Coverage Results" MODIFIED="1604697629644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="graphql-tutorial" />
   </component>
 </project>

@@ -19,10 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b66b369-8f2b-4cac-8fba-2fd6ced2e4ab" name="Default Changelist" comment="Update the mutation type">
+    <list default="true" id="3b66b369-8f2b-4cac-8fba-2fd6ced2e4ab" name="Default Changelist" comment="Create new Users model/table -- add required dependencies">
+      <change afterPath="$PROJECT_DIR$/app/graphql/mutations/create_user.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/graphql/mutations/sign_in_user.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/graphql/types/auth_provider_credentials_input.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/graphql/types/user_type.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/graphql-tutorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/graphql-tutorial.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/graphql/mutations/base_mutation.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/mutations/base_mutation.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/graphql/mutations/create_link.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/mutations/create_link.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/graphql/types/mutation_type.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/types/mutation_type.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,11 +51,17 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1jtJcvfqp95X5T1vCh4nYjrw8L9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
+    <option name="compactDirectories" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -83,12 +92,11 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method v="2" />
@@ -182,7 +190,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604617537831</updated>
-      <workItem from="1604617542664" duration="8316000" />
+      <workItem from="1604617542664" duration="9655000" />
+      <workItem from="1605133330747" duration="628000" />
+      <workItem from="1605137436361" duration="162000" />
+      <workItem from="1605137673967" duration="3391000" />
     </task>
     <task id="LOCAL-00001" summary="Add the GraphIQL css to the asset pre-compile pipeline.">
       <created>1605036678675</created>
@@ -219,7 +230,35 @@
       <option name="project" value="LOCAL" />
       <updated>1605037087087</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Don't use the default relay mutation">
+      <created>1605050905860</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605050905860</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Create new Users model/table">
+      <created>1605051258595</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605051258595</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Create new Users model/table">
+      <created>1605051297480</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605051297480</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Create new Users model/table -- add required dependencies">
+      <created>1605052809835</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605052809835</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,27 +274,41 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add the GraphIQL css to the asset pre-compile pipeline." />
     <MESSAGE value="Add a query." />
     <MESSAGE value="Workspa" />
     <MESSAGE value="Update the mutation type" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the mutation type" />
+    <MESSAGE value="Don't use the default relay mutation" />
+    <MESSAGE value="Create new Users model/table" />
+    <MESSAGE value="Create new Users model/table -- add required dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new Users model/table -- add required dependencies" />
   </component>
   <component name="WindowStateProjectService">
     <state x="689" y="339" key="#Notifications" timestamp="1604617556792">
       <screen x="0" y="23" width="1920" height="971" />
     </state>
     <state x="689" y="339" key="#Notifications/0.23.1920.971@0.23.1920.971" timestamp="1604617556792" />
-    <state x="184" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604697627102">
-      <screen x="0" y="23" width="1440" height="795" />
+    <state x="960" y="283" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605208383427">
+      <screen x="0" y="23" width="1920" height="971" />
     </state>
     <state x="184" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.795@0.23.1440.795" timestamp="1604697627102" />
+    <state x="960" y="283" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.971@0.23.1920.971" timestamp="1605208383427" />
     <state x="691" y="317" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605050171393">
       <screen x="0" y="23" width="1920" height="971" />
     </state>
     <state x="691" y="317" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.971@0.23.1920.971" timestamp="1605050171393" />
+    <state x="408" y="161" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1605133293299">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="408" y="161" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1605133293299" />
+    <state x="723" y="218" key="#xdebugger.evaluate" timestamp="1605208769816">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state x="723" y="218" key="#xdebugger.evaluate/0.23.1920.971@0.23.1920.971" timestamp="1605208769816" />
     <state x="537" y="84" key="CommitChangelistDialog2" timestamp="1605037082113">
       <screen x="0" y="23" width="1920" height="971" />
     </state>
@@ -264,38 +317,70 @@
       <screen x="0" y="23" width="1920" height="971" />
     </state>
     <state x="100" y="123" width="1720" height="771" key="DiffContextDialog/0.23.1920.971@0.23.1920.971" timestamp="1604697401410" />
-    <state width="1878" height="202" key="GridCell.Tab.0.bottom" timestamp="1605050465915">
+    <state width="1878" height="378" key="GridCell.Tab.0.bottom" timestamp="1605208990750">
       <screen x="0" y="23" width="1920" height="971" />
     </state>
-    <state width="1878" height="202" key="GridCell.Tab.0.bottom/0.23.1920.971@0.23.1920.971" timestamp="1605050465915" />
-    <state width="1878" height="202" key="GridCell.Tab.0.center" timestamp="1605050465915">
+    <state width="1878" height="202" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605133301024" />
+    <state width="1398" height="378" key="GridCell.Tab.0.bottom/0.23.1440.792@0.23.1440.792" timestamp="1605138516025" />
+    <state width="1878" height="378" key="GridCell.Tab.0.bottom/0.23.1920.971@0.23.1920.971" timestamp="1605208990750" />
+    <state width="1878" height="378" key="GridCell.Tab.0.center" timestamp="1605208990749">
       <screen x="0" y="23" width="1920" height="971" />
     </state>
-    <state width="1878" height="202" key="GridCell.Tab.0.center/0.23.1920.971@0.23.1920.971" timestamp="1605050465915" />
-    <state width="1878" height="202" key="GridCell.Tab.0.left" timestamp="1605050465914">
+    <state width="1878" height="202" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605133301024" />
+    <state width="1398" height="378" key="GridCell.Tab.0.center/0.23.1440.792@0.23.1440.792" timestamp="1605138516025" />
+    <state width="1878" height="378" key="GridCell.Tab.0.center/0.23.1920.971@0.23.1920.971" timestamp="1605208990749" />
+    <state width="1878" height="378" key="GridCell.Tab.0.left" timestamp="1605208990749">
       <screen x="0" y="23" width="1920" height="971" />
     </state>
-    <state width="1878" height="202" key="GridCell.Tab.0.left/0.23.1920.971@0.23.1920.971" timestamp="1605050465914" />
-    <state width="1878" height="202" key="GridCell.Tab.0.right" timestamp="1605050465915">
+    <state width="1878" height="202" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605133301023" />
+    <state width="1398" height="378" key="GridCell.Tab.0.left/0.23.1440.792@0.23.1440.792" timestamp="1605138516024" />
+    <state width="1878" height="378" key="GridCell.Tab.0.left/0.23.1920.971@0.23.1920.971" timestamp="1605208990749" />
+    <state width="1878" height="378" key="GridCell.Tab.0.right" timestamp="1605208990750">
       <screen x="0" y="23" width="1920" height="971" />
     </state>
-    <state width="1878" height="202" key="GridCell.Tab.0.right/0.23.1920.971@0.23.1920.971" timestamp="1605050465915" />
-    <state width="1878" height="202" key="GridCell.Tab.1.bottom" timestamp="1605050465917">
+    <state width="1878" height="202" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605133301024" />
+    <state width="1398" height="378" key="GridCell.Tab.0.right/0.23.1440.792@0.23.1440.792" timestamp="1605138516025" />
+    <state width="1878" height="378" key="GridCell.Tab.0.right/0.23.1920.971@0.23.1920.971" timestamp="1605208990750" />
+    <state width="1878" height="378" key="GridCell.Tab.1.bottom" timestamp="1605208990751">
       <screen x="0" y="23" width="1920" height="971" />
     </state>
-    <state width="1878" height="202" key="GridCell.Tab.1.bottom/0.23.1920.971@0.23.1920.971" timestamp="1605050465917" />
-    <state width="1878" height="202" key="GridCell.Tab.1.center" timestamp="1605050465916">
+    <state width="1878" height="202" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605133301026" />
+    <state width="1398" height="378" key="GridCell.Tab.1.bottom/0.23.1440.792@0.23.1440.792" timestamp="1605138516027" />
+    <state width="1878" height="378" key="GridCell.Tab.1.bottom/0.23.1920.971@0.23.1920.971" timestamp="1605208990751" />
+    <state width="1878" height="378" key="GridCell.Tab.1.center" timestamp="1605208990751">
       <screen x="0" y="23" width="1920" height="971" />
     </state>
-    <state width="1878" height="202" key="GridCell.Tab.1.center/0.23.1920.971@0.23.1920.971" timestamp="1605050465916" />
-    <state width="1878" height="202" key="GridCell.Tab.1.left" timestamp="1605050465916">
+    <state width="1878" height="202" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1605133301025" />
+    <state width="1398" height="378" key="GridCell.Tab.1.center/0.23.1440.792@0.23.1440.792" timestamp="1605138516026" />
+    <state width="1878" height="378" key="GridCell.Tab.1.center/0.23.1920.971@0.23.1920.971" timestamp="1605208990751" />
+    <state width="1878" height="378" key="GridCell.Tab.1.left" timestamp="1605208990750">
       <screen x="0" y="23" width="1920" height="971" />
     </state>
-    <state width="1878" height="202" key="GridCell.Tab.1.left/0.23.1920.971@0.23.1920.971" timestamp="1605050465916" />
-    <state width="1878" height="202" key="GridCell.Tab.1.right" timestamp="1605050465916">
+    <state width="1878" height="202" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1605133301025" />
+    <state width="1398" height="378" key="GridCell.Tab.1.left/0.23.1440.792@0.23.1440.792" timestamp="1605138516026" />
+    <state width="1878" height="378" key="GridCell.Tab.1.left/0.23.1920.971@0.23.1920.971" timestamp="1605208990750" />
+    <state width="1878" height="378" key="GridCell.Tab.1.right" timestamp="1605208990751">
       <screen x="0" y="23" width="1920" height="971" />
     </state>
-    <state width="1878" height="202" key="GridCell.Tab.1.right/0.23.1920.971@0.23.1920.971" timestamp="1605050465916" />
+    <state width="1878" height="202" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1605133301025" />
+    <state width="1398" height="378" key="GridCell.Tab.1.right/0.23.1440.792@0.23.1440.792" timestamp="1605138516027" />
+    <state width="1878" height="378" key="GridCell.Tab.1.right/0.23.1920.971@0.23.1920.971" timestamp="1605208990751" />
+    <state width="1878" height="323" key="GridCell.Tab.2.bottom" timestamp="1605208959731">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state width="1878" height="323" key="GridCell.Tab.2.bottom/0.23.1920.971@0.23.1920.971" timestamp="1605208959731" />
+    <state width="1878" height="323" key="GridCell.Tab.2.center" timestamp="1605208959730">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state width="1878" height="323" key="GridCell.Tab.2.center/0.23.1920.971@0.23.1920.971" timestamp="1605208959730" />
+    <state width="1878" height="323" key="GridCell.Tab.2.left" timestamp="1605208959729">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state width="1878" height="323" key="GridCell.Tab.2.left/0.23.1920.971@0.23.1920.971" timestamp="1605208959729" />
+    <state width="1878" height="323" key="GridCell.Tab.2.right" timestamp="1605208959730">
+      <screen x="0" y="23" width="1920" height="971" />
+    </state>
+    <state width="1878" height="323" key="GridCell.Tab.2.right/0.23.1920.971@0.23.1920.971" timestamp="1605208959730" />
     <state x="221" y="57" key="SettingsEditor" timestamp="1604700954909">
       <screen x="0" y="23" width="1440" height="795" />
     </state>
@@ -304,15 +389,20 @@
       <screen x="0" y="23" width="1920" height="971" />
     </state>
     <state x="811" y="429" key="VCS.ChangelistChooser/0.23.1920.971@0.23.1920.971" timestamp="1605036975176" />
-    <state x="513" y="163" width="894" height="831" key="search.everywhere.popup" timestamp="1605050269047">
+    <state x="420" y="196" key="Vcs.Push.Dialog.v2" timestamp="1605137386888">
+      <screen x="0" y="23" width="1440" height="791" />
+    </state>
+    <state x="420" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.791@0.23.1440.791" timestamp="1605137386888" />
+    <state x="560" y="235" key="Vcs.Push.Dialog.v2/0.23.1920.971@0.23.1920.971" timestamp="1605051260340" />
+    <state x="513" y="163" width="894" height="831" key="search.everywhere.popup" timestamp="1605211687999">
       <screen x="0" y="23" width="1920" height="971" />
     </state>
-    <state x="385" y="138" width="670" height="676" key="search.everywhere.popup/0.23.1440.791@0.23.1440.791" timestamp="1604628389565" />
+    <state x="385" y="138" width="670" height="676" key="search.everywhere.popup/0.23.1440.791@0.23.1440.791" timestamp="1605137732910" />
     <state x="385" y="138" width="670" height="677" key="search.everywhere.popup/0.23.1440.792@0.23.1440.792" timestamp="1604697577889" />
     <state x="385" y="138" width="670" height="680" key="search.everywhere.popup/0.23.1440.795@0.23.1440.795" timestamp="1604701138602" />
-    <state x="513" y="163" width="894" height="831" key="search.everywhere.popup/0.23.1920.971@0.23.1920.971" timestamp="1605050269047" />
+    <state x="513" y="163" width="894" height="831" key="search.everywhere.popup/0.23.1920.971@0.23.1920.971" timestamp="1605211687999" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/graphql_tutorial@Development__graphql_tutorial.rcov" NAME="Development: graphql-tutorial Coverage Results" MODIFIED="1605050465880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="graphql-tutorial" />
+    <SUITE FILE_PATH="coverage/graphql_tutorial@Development__graphql_tutorial.rcov" NAME="Development: graphql-tutorial Coverage Results" MODIFIED="1605208959653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="graphql-tutorial" />
   </component>
 </project>
